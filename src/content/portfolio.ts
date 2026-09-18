@@ -15,8 +15,8 @@ export const identity = {
   roles: ["SCREENWRITER", "SCRIPT WRITER", "CREATIVE WRITER", "CONTENT WRITER"],
   heroQuote: "I write stories for the screen, the page, and everything in between.",
   statement:
-    "I write about people, the moments that change them, and the stories that remain after those moments are gone.",
-  literaryIntro: "Writing from the space between what is felt and what is seen.",
+    "I didn't mean to get changed. But the people around me sculpted me into the ‘Beautiful Soul’ I became. So, I chose to write about them.",
+  literaryIntro: "The space that I choose over people to share what is never said and what is never understandable is Writing.",
 };
 
 /* =========================================================
@@ -24,11 +24,11 @@ export const identity = {
    ========================================================= */
 
 export const bio: string[] = [
-  "I began writing fiction in 2021, publishing my early stories under the name Dhaanush. My first works were rooted in crime fiction, where constructing logical ideas, researching subjects, and building suspense helped me develop my craft.",
+  "It was in 2021 that I began to write crime fiction and published my earlier works under my real name, Dhaanush. The beginning stage of my work was focused on constructing logical ideas, researching things, and building suspense, which helped me develop my art.",
 
-  "As life moved from school into college and through its own unexpected turns, my writing changed with me. I found myself becoming increasingly interested in people—the relationships we build, the memories we carry, the people who change us, and the stories hidden inside ordinary moments. Poetry became another way of exploring those emotions, eventually leading me toward a broader interest in love, human relationships, coming-of-age, and non-fiction.",
+  "As my life transitioned from school to college, it took me in directions I never expected, and my writing followed that journey along with me. From there, I started to write about the people I met on this journey, the relationships I built with them, the memories we created, and the moments hidden behind the ordinary days spent with them. In this journey, poetry became another way of exploring my inner emotions. Through it, I discovered my feelings about love, Humane Relationships, and it became the starting point for me to enter my non-fiction life.",
 
-  "Today, I write as Kaviyan Sendhan, carrying forward everything I learned as Dhaanush while exploring stories through a more cinematic lens. My work moves between fiction, poetry, and screenwriting, with a particular interest in stories that can entertain an audience while leaving something behind after the final scene.",
+  "As my character and emotions transitioned, Dhaanush became Kaviyan Sendhan, carrying forward everything I learned as Dhaanush while exploring stories through a slightly more cinematic lens. My work moves between fiction, poetry, and screenwriting, with a particular interest in stories that can entertain an audience while leaving something behind after the final scene.",
 ];
 
 export const progression = [
