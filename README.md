@@ -1,26 +1,49 @@
-# Prompt Builder
+# Dhaanush K — Writing Portfolio
 
-This is the prompt which I gave as Markdown File. Read the file and start building
+A cinematic writing portfolio for **Dhaanush K**, a screenwriter and creative writer exploring stories through screenwriting, fiction, poetry, and long-form storytelling.
 
-This project was built with [Lovable](https://lovable.dev).
+## About
 
-**Live app**: https://dhaanushk-writing-portfolio.lovable.app
+I write about people, the moments that change them, and the stories that remain after those moments are gone.
 
-## Build with Lovable
+My work moves between fiction, poetry, and screenwriting, with a particular interest in human relationships, coming-of-age, love, loss, family, and the emotions hidden inside ordinary moments.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/a9c3f09e-a241-48a6-91e9-13c46cd38570).
+## Portfolio
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+The website presents:
 
-## Development
+- **Published Books**
+  - *Suspicious: Way of Brutalism*
+  - *Fake Friendship... Real Murders...: Betrayal Penalties Death*
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+- **Stories Still Being Written**
+  - *Nee Kaatru Naan Maram*
+  - *Thendral*
+  - *Vayathirku Appaal Oru Unmai*
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+- **Screenplay**
+  - *Nee Kaatru Naan Maram*
+
+- **Poetry**
+  - Selected Tamil and English poetry
+
+- **Writer's Desk**
+  - Writing process, creative interests, and selected work
+
+## Tech Stack
+
+- React
+- TypeScript
+- TanStack Start
+- Vite
+- Tailwind CSS
+- Netlify
+- Nitro
+
+## Local Development
+
+Clone the repository:
+
+```bash
+git clone https://github.com/DhaanushK/Dhaanush-K-Writing-Portfolio.git
+cd Dhaanush-K-Writing-Portfolio
