@@ -58,7 +58,7 @@ export const process: string[] = [
 
   "Music, memories, places, and human relationships often become the starting points. I observe the way people talk, the silences between their words, the small gestures they make, and how relationships change over time. Sometimes a song reminds me of a particular moment; sometimes a place makes me imagine a character who belongs there.",
 
-  "I collect these emotions and moments and gradually connect them into a story. While writing, I tend to see the story cinematically—I imagine the locations, background sounds, expressions, pauses, and how a scene might move visually.",
+  "I collect these emotions and moments and gradually connect them into a story. While writing, I tend to see the story cinematically where, I imagine the locations, background sounds, expressions, pauses, and how a scene might move visually.",
 
   "In the end, my process is less about inventing events and more about asking:",
 
