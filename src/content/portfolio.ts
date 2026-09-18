@@ -223,7 +223,7 @@ export const contact = {
    ========================================================= */
 
 export const screenplayIntro =
-  "Opening sequence from the screenplay in progress — written scene by scene, in the language it was first imagined in.";
+  "An introduction to the soul sculpted through the screenplay in progress, written in the language it was first imagined in.";
 
 export type SceneBlock = {
   heading?: string;
