@@ -903,6 +903,26 @@ export const archive: ArchiveItem[] = [
   {
     index: "02",
 
+    title: "NEE KAATRU NAAN MARAM",
+
+    tamilTitle: "LONG-FORM FICTION",
+
+    kind: "MANUSCRIPT IN PROGRESS",
+
+    notes: [
+      "An excerpt from a continuing literary work.",
+
+      "A story about friendship, love, loss, family and finding oneself again.",
+    ],
+
+    link: "#manuscript",
+
+    linkLabel: "READ EXCERPT",
+  },
+
+  {
+    index: "03",
+
     title: "THENDRAL",
 
     tamilTitle: "தென்றல்",
@@ -921,7 +941,7 @@ export const archive: ArchiveItem[] = [
   },
 
   {
-    index: "03",
+    index: "04",
 
     title: "VAYATHIRKU APPAAL ORU UNMAI",
 
@@ -941,7 +961,7 @@ export const archive: ArchiveItem[] = [
   },
 
   {
-    index: "04",
+    index: "05",
 
     title: "POETRY",
 
@@ -958,25 +978,5 @@ export const archive: ArchiveItem[] = [
     link: "#poetry",
 
     linkLabel: "READ POETRY",
-  },
-
-  {
-    index: "05",
-
-    title: "NEE KAATRU NAAN MARAM",
-
-    tamilTitle: "LONG-FORM FICTION",
-
-    kind: "MANUSCRIPT IN PROGRESS",
-
-    notes: [
-      "An excerpt from a continuing literary work.",
-
-      "A story about friendship, love, loss, family and finding oneself again.",
-    ],
-
-    link: "#manuscript",
-
-    linkLabel: "READ EXCERPT",
   },
 ];
