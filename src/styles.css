@@ -138,18 +138,6 @@
   transform: none;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    transition-duration: 0.001ms !important;
-  }
-}
 /* =========================================
    POETRY — MANUSCRIPT REVEAL
    ========================================= */
@@ -200,17 +188,69 @@
 }
 
 /* =========================================
+   LITERARY EXCERPTS — MANUSCRIPT REVEAL
+   ========================================= */
+
+/*
+ * Shared opening animation for long-form literary
+ * excerpts such as Nee Kaatru Naan Maram and
+ * Vayathirku Appaal Oru Unmai.
+ */
+
+.literary-manuscript {
+  animation: literaryManuscriptOpen 0.8s
+    cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes literaryManuscriptOpen {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*
+ * Paragraph-by-paragraph reveal.
+ */
+
+.literary-paragraph {
+  opacity: 0;
+  transform: translateY(22px);
+  animation: literaryParagraphReveal 0.75s
+    cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes literaryParagraphReveal {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
    THENDRAL — LITERARY PAGE REVEAL
    ========================================= */
 
 .thendral-manuscript {
-  animation: thendralManuscriptOpen 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: thendralManuscriptOpen 0.8s
+    cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .thendral-paragraph {
   opacity: 0;
   transform: translateY(22px);
-  animation: thendralParagraphReveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation: thendralParagraphReveal 0.75s
+    cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes thendralManuscriptOpen {
@@ -229,6 +269,70 @@
   from {
     opacity: 0;
     transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   SCREENPLAY — PAGE REVEAL
+   ========================================= */
+
+/*
+ * The screenplay keeps its typewritten visual identity,
+ * but the opening sequence enters the page gradually.
+ */
+
+.screenplay-manuscript {
+  animation: screenplayManuscriptOpen 0.8s
+    cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.screenplay-scene {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: screenplaySceneReveal 0.7s
+    cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.screenplay-block {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: screenplayBlockReveal 0.55s
+    cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes screenplayManuscriptOpen {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes screenplaySceneReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes screenplayBlockReveal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
   }
 
   to {
@@ -261,7 +365,12 @@
   .manuscript-line-item,
   .manuscript-stanza,
   .thendral-manuscript,
-  .thendral-paragraph {
+  .thendral-paragraph,
+  .literary-manuscript,
+  .literary-paragraph,
+  .screenplay-manuscript,
+  .screenplay-scene,
+  .screenplay-block {
     animation: none;
     opacity: 1;
     transform: none;

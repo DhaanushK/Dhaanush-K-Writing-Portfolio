@@ -60,7 +60,8 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:description",
-        content: "Screenwriting, fiction and poetry by Dhaanush K, writing as Kaviyan Sendhan.",
+        content:
+          "Screenwriting, fiction and poetry by Dhaanush K, writing as Kaviyan Sendhan.",
       },
       {
         property: "og:type",
@@ -90,14 +91,16 @@ function Portfolio() {
 
       <main>
         {/* ========================================================= */}
-        {/* PROLOGUE                                                  */}
+        {/* PROLOGUE                                                 */}
         {/* ========================================================= */}
 
         <section className="mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-36">
           <Reveal>
             <p className="label-xs text-primary">Prologue / 01</p>
 
-            <p className="mt-6 font-mono text-sm tracking-widest text-muted-foreground">FADE IN:</p>
+            <p className="mt-6 font-mono text-sm tracking-widest text-muted-foreground">
+              FADE IN:
+            </p>
 
             <h1 className="mt-8 font-serif text-6xl leading-[0.95] tracking-tight text-foreground md:text-8xl">
               {identity.name}
@@ -111,7 +114,9 @@ function Portfolio() {
               “{identity.heroQuote}”
             </p>
 
-            <p className="label-xs mt-10 text-muted-foreground">{identity.roles.join(" · ")}</p>
+            <p className="label-xs mt-10 text-muted-foreground">
+              {identity.roles.join(" · ")}
+            </p>
 
             <div className="mt-12 flex flex-wrap gap-4">
               <a
@@ -191,7 +196,7 @@ function Portfolio() {
         </section>
 
         {/* ========================================================= */}
-        {/* THE WRITER'S PROCESS                                      */}
+        {/* THE WRITER'S PROCESS                                     */}
         {/* ========================================================= */}
 
         <section className="border-t border-border/50 bg-ink/40">
@@ -215,7 +220,11 @@ function Portfolio() {
         <section id="work" className="border-t border-border/50">
           <div className="mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
             <Reveal>
-              <ChapterHeading chapter="Chapter II" title="STORIES" intro={booksIntro} />
+              <ChapterHeading
+                chapter="Chapter II"
+                title="STORIES"
+                intro={booksIntro}
+              />
             </Reveal>
 
             <div className="mt-20 space-y-20">
@@ -248,7 +257,9 @@ function Portfolio() {
                         {book.title}
                       </h3>
 
-                      {book.subtitle && <p className="label-xs mt-3 text-lilac">{book.subtitle}</p>}
+                      {book.subtitle && (
+                        <p className="label-xs mt-3 text-lilac">{book.subtitle}</p>
+                      )}
 
                       <div className="mt-8 space-y-4 leading-relaxed text-muted-foreground">
                         {book.synopsis.map((paragraph) => (
@@ -273,13 +284,19 @@ function Portfolio() {
         </section>
 
         {/* ========================================================= */}
-        {/* CHAPTER III — STORIES STILL BEING WRITTEN                 */}
+        {/* CHAPTER III — STORIES STILL BEING WRITTEN                */}
         {/* ========================================================= */}
 
-        <section id="stories-still-being-written" className="border-t border-border/50 bg-ink/40">
+        <section
+          id="stories-still-being-written"
+          className="border-t border-border/50 bg-ink/40"
+        >
           <div className="mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
             <Reveal>
-              <ChapterHeading chapter="Chapter III" title="STORIES STILL BEING WRITTEN" />
+              <ChapterHeading
+                chapter="Chapter III"
+                title="STORIES STILL BEING WRITTEN"
+              />
             </Reveal>
 
             {/* ===================================================== */}
@@ -287,7 +304,10 @@ function Portfolio() {
             {/* ===================================================== */}
 
             <Reveal delay={80}>
-              <article id="manuscript" className="mt-20 border-t border-border/60 pt-10">
+              <article
+                id="manuscript"
+                className="mt-20 border-t border-border/60 pt-10"
+              >
                 <div className="max-w-3xl">
                   <p className="label-xs text-primary">SELECTED MANUSCRIPT</p>
 
@@ -307,7 +327,9 @@ function Portfolio() {
                     {nknmOpeningTitle}
                   </h3>
 
-                  <p className="label-xs mt-3 text-muted-foreground">{nknmOpeningLabel}</p>
+                  <p className="label-xs mt-3 text-muted-foreground">
+                    {nknmOpeningLabel}
+                  </p>
                 </div>
 
                 {!manuscriptOpen ? (
@@ -321,7 +343,9 @@ function Portfolio() {
                     <div className="mt-10 flex items-center gap-6">
                       <div className="h-px flex-1 bg-border/60" />
 
-                      <span className="label-xs text-muted-foreground/60">SELECTED OPENING</span>
+                      <span className="label-xs text-muted-foreground/60">
+                        SELECTED OPENING
+                      </span>
 
                       <div className="h-px flex-1 bg-border/60" />
                     </div>
@@ -335,10 +359,12 @@ function Portfolio() {
                     </button>
                   </article>
                 ) : (
-                  <article className="long-form-manuscript mx-auto mt-16 max-w-3xl">
+                  <article className="long-form-manuscript literary-manuscript mx-auto mt-16 max-w-3xl">
                     <div className="mb-10 flex items-center justify-between border-y border-border/60 py-5">
                       <div>
-                        <p className="label-xs text-primary">{nknmOpeningTitle}</p>
+                        <p className="label-xs text-primary">
+                          {nknmOpeningTitle}
+                        </p>
 
                         <p className="mt-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
                           {nknmOpeningLabel}
@@ -358,7 +384,7 @@ function Portfolio() {
                       {nknmOpeningExcerpt.map((paragraph, index) => (
                         <p
                           key={`nknm-${index}`}
-                          className="manuscript-paragraph"
+                          className="literary-paragraph"
                           style={{
                             animationDelay: `${index * 90}ms`,
                           }}
@@ -369,7 +395,9 @@ function Portfolio() {
                     </div>
 
                     <div className="mt-16 border-t border-border/60 pt-8">
-                      <p className="label-xs text-primary">END OF SELECTED OPENING</p>
+                      <p className="label-xs text-primary">
+                        END OF SELECTED OPENING
+                      </p>
 
                       <p className="mt-3 text-sm leading-relaxed text-muted-foreground/70">
                         This is an ongoing long-form work.
@@ -393,7 +421,10 @@ function Portfolio() {
             {/* ===================================================== */}
 
             <Reveal delay={140}>
-              <article id="thendral" className="mt-24 border-t border-border/60 pt-10">
+              <article
+                id="thendral"
+                className="mt-24 border-t border-border/60 pt-10"
+              >
                 <div className="max-w-3xl">
                   <p className="label-xs text-primary">SELECTED EXCERPT</p>
 
@@ -405,13 +436,16 @@ function Portfolio() {
                     {thendralSubtitle}
                   </p>
 
-                  <p className="tamil mt-3 text-sm text-muted-foreground">{thendralAuthor}</p>
+                  <p className="tamil mt-3 text-sm text-muted-foreground">
+                    {thendralAuthor}
+                  </p>
 
                   <div className="mt-8 h-px w-20 bg-primary/60" />
 
                   <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                    A Tamil short fiction about friendship, loneliness, ambition, and the people who
-                    quietly become part of someone&apos;s journey.
+                    A Tamil short fiction about friendship, loneliness, ambition,
+                    and the people who quietly become part of someone&apos;s
+                    journey.
                   </p>
                 </div>
 
@@ -426,7 +460,9 @@ function Portfolio() {
                     <div className="mt-10 flex items-center gap-6">
                       <div className="h-px flex-1 bg-border/60" />
 
-                      <span className="label-xs text-muted-foreground/60">EXCERPT</span>
+                      <span className="label-xs text-muted-foreground/60">
+                        EXCERPT
+                      </span>
 
                       <div className="h-px flex-1 bg-border/60" />
                     </div>
@@ -474,7 +510,9 @@ function Portfolio() {
                     </div>
 
                     <div className="mt-16 border-t border-border/60 pt-8">
-                      <p className="label-xs text-primary">END OF SELECTED EXCERPT</p>
+                      <p className="label-xs text-primary">
+                        END OF SELECTED EXCERPT
+                      </p>
 
                       <p className="mt-3 text-sm leading-relaxed text-muted-foreground/70">
                         The story continues beyond this excerpt.
@@ -494,11 +532,14 @@ function Portfolio() {
             </Reveal>
 
             {/* ===================================================== */}
-            {/* VAYATHIRKU APPAAL ORU UNMAI                            */}
+            {/* VAYATHIRKU APPAAL ORU UNMAI                          */}
             {/* ===================================================== */}
 
             <Reveal delay={200}>
-              <article id="vayathirku-appaal" className="mt-24 border-t border-border/60 pt-10">
+              <article
+                id="vayathirku-appaal"
+                className="mt-24 border-t border-border/60 pt-10"
+              >
                 <div className="max-w-3xl">
                   <p className="label-xs text-primary">SELECTED STORY</p>
 
@@ -510,7 +551,9 @@ function Portfolio() {
                     {vayathirkuSubtitle}
                   </p>
 
-                  <p className="tamil mt-3 text-sm text-muted-foreground">{vayathirkuAuthor}</p>
+                  <p className="tamil mt-3 text-sm text-muted-foreground">
+                    {vayathirkuAuthor}
+                  </p>
 
                   <div className="mt-8 h-px w-20 bg-primary/60" />
 
@@ -523,14 +566,18 @@ function Portfolio() {
                   <article className="mx-auto mt-16 max-w-3xl border-y border-border/60 py-12">
                     <div className="tamil space-y-6 text-[1.05rem] leading-loose text-muted-foreground">
                       {vayathirkuExcerpt.slice(0, 2).map((paragraph, index) => (
-                        <p key={`vayathirku-preview-${index}`}>{paragraph}</p>
+                        <p key={`vayathirku-preview-${index}`}>
+                          {paragraph}
+                        </p>
                       ))}
                     </div>
 
                     <div className="mt-10 flex items-center gap-6">
                       <div className="h-px flex-1 bg-border/60" />
 
-                      <span className="label-xs text-muted-foreground/60">SELECTED EXCERPT</span>
+                      <span className="label-xs text-muted-foreground/60">
+                        SELECTED EXCERPT
+                      </span>
 
                       <div className="h-px flex-1 bg-border/60" />
                     </div>
@@ -544,10 +591,12 @@ function Portfolio() {
                     </button>
                   </article>
                 ) : (
-                  <article className="vayathirku-manuscript mx-auto mt-16 max-w-3xl">
+                  <article className="vayathirku-manuscript literary-manuscript mx-auto mt-16 max-w-3xl">
                     <div className="mb-10 flex items-center justify-between border-y border-border/60 py-5">
                       <div>
-                        <p className="label-xs text-primary">VAYATHIRKU APPAAL</p>
+                        <p className="label-xs text-primary">
+                          VAYATHIRKU APPAAL
+                        </p>
 
                         <p className="mt-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
                           Selected Story
@@ -567,7 +616,7 @@ function Portfolio() {
                       {vayathirkuExcerpt.map((paragraph, index) => (
                         <p
                           key={`vayathirku-${index}`}
-                          className="vayathirku-paragraph"
+                          className="literary-paragraph"
                           style={{
                             animationDelay: `${index * 90}ms`,
                           }}
@@ -578,7 +627,9 @@ function Portfolio() {
                     </div>
 
                     <div className="mt-16 border-t border-border/60 pt-8">
-                      <p className="label-xs text-primary">END OF SELECTED EXCERPT</p>
+                      <p className="label-xs text-primary">
+                        END OF SELECTED EXCERPT
+                      </p>
 
                       <p className="mt-3 text-sm leading-relaxed text-muted-foreground/70">
                         The story continues beyond this excerpt.
@@ -600,7 +651,9 @@ function Portfolio() {
             {/* Small Chapter III closing marker */}
             <Reveal delay={260}>
               <div className="mt-20 border-t border-border/60 pt-6">
-                <p className="label-xs text-muted-foreground/60">STORIES IN PROGRESS</p>
+                <p className="label-xs text-muted-foreground/60">
+                  STORIES IN PROGRESS
+                </p>
 
                 <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
                   Stories that are still finding their final form.
@@ -611,13 +664,17 @@ function Portfolio() {
         </section>
 
         {/* ========================================================= */}
-        {/* CHAPTER IV — THE SCREENPLAY                               */}
+        {/* CHAPTER IV — THE SCREENPLAY                              */}
         {/* ========================================================= */}
 
         <section id="screenplay" className="border-t border-border/50">
           <div className="mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
             <Reveal>
-              <ChapterHeading chapter="Chapter IV" title="THE SCREENPLAY" intro={screenplayIntro} />
+              <ChapterHeading
+                chapter="Chapter IV"
+                title="THE SCREENPLAY"
+                intro={screenplayIntro}
+              />
             </Reveal>
 
             {!screenplayOpen ? (
@@ -658,9 +715,11 @@ function Portfolio() {
               </Reveal>
             ) : (
               <Reveal delay={80}>
-                <div className="mt-20">
+                <div className="screenplay-manuscript mt-20">
                   <div className="mb-10 flex items-center justify-between border-y border-border/60 py-5">
-                    <p className="label-xs text-primary">FULL OPENING SEQUENCE</p>
+                    <p className="label-xs text-primary">
+                      FULL OPENING SEQUENCE
+                    </p>
 
                     <button
                       type="button"
@@ -672,9 +731,17 @@ function Portfolio() {
                   </div>
 
                   <div className="space-y-16">
-                    {scenes.map((scene) => (
-                      <article key={scene.number} className="border-t border-border/60 pt-10">
-                        <p className="label-xs text-primary">{scene.number}</p>
+                    {scenes.map((scene, sceneIndex) => (
+                      <article
+                        key={scene.number}
+                        className="screenplay-scene border-t border-border/60 pt-10"
+                        style={{
+                          animationDelay: `${sceneIndex * 120}ms`,
+                        }}
+                      >
+                        <p className="label-xs text-primary">
+                          {scene.number}
+                        </p>
 
                         <h3 className="mt-4 font-mono text-lg tracking-wide text-foreground md:text-xl">
                           {scene.slug}
@@ -682,7 +749,15 @@ function Portfolio() {
 
                         <div className="mt-8 max-w-3xl space-y-6 font-mono text-[0.9rem] leading-loose text-muted-foreground">
                           {scene.blocks.map((block, bi) => (
-                            <div key={`${scene.number}-${bi}`}>
+                            <div
+                              key={`${scene.number}-${bi}`}
+                              className="screenplay-block"
+                              style={{
+                                animationDelay: `${
+                                  sceneIndex * 120 + bi * 100
+                                }ms`,
+                              }}
+                            >
                               {block.heading && (
                                 <p className="mb-3 tracking-wide text-foreground">
                                   {block.heading}
@@ -690,7 +765,9 @@ function Portfolio() {
                               )}
 
                               {block.cue && (
-                                <p className="text-right tracking-widest text-lilac">{block.cue}</p>
+                                <p className="text-right tracking-widest text-lilac">
+                                  {block.cue}
+                                </p>
                               )}
 
                               {block.character && (
@@ -702,7 +779,9 @@ function Portfolio() {
                               {block.text && (
                                 <p
                                   className={
-                                    block.character ? "text-center text-foreground/90" : ""
+                                    block.character
+                                      ? "text-center text-foreground/90"
+                                      : ""
                                   }
                                 >
                                   {block.text}
@@ -731,13 +810,17 @@ function Portfolio() {
         </section>
 
         {/* ========================================================= */}
-        {/* INTERLUDE — POETRY                                        */}
+        {/* INTERLUDE — POETRY                                       */}
         {/* ========================================================= */}
 
         <section id="poetry" className="border-t border-border/50">
           <div className="mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
             <Reveal>
-              <ChapterHeading chapter="INTERLUDE" title="POETRY" intro={poetryIntro} />
+              <ChapterHeading
+                chapter="INTERLUDE"
+                title="POETRY"
+                intro={poetryIntro}
+              />
             </Reveal>
 
             {/* POEM RACK */}
@@ -756,13 +839,17 @@ function Portfolio() {
                           setOpenPoem(false);
                         }}
                         className={`group flex-1 border-b border-border/60 px-5 py-6 text-left transition-colors last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0 ${
-                          isSelected ? "bg-primary/5" : "hover:bg-primary/[0.03]"
+                          isSelected
+                            ? "bg-primary/5"
+                            : "hover:bg-primary/[0.03]"
                         }`}
                       >
                         <div className="flex items-start gap-4">
                           <span
                             className={`label-xs transition-colors ${
-                              isSelected ? "text-primary" : "text-muted-foreground/50"
+                              isSelected
+                                ? "text-primary"
+                                : "text-muted-foreground/50"
                             }`}
                           >
                             0{i + 1}
@@ -771,7 +858,9 @@ function Portfolio() {
                           <div>
                             <p
                               className={`tamil text-lg leading-snug transition-colors ${
-                                isSelected ? "text-foreground" : "text-muted-foreground"
+                                isSelected
+                                  ? "text-foreground"
+                                  : "text-muted-foreground"
                               }`}
                             >
                               {poem.tamilTitle}
@@ -779,7 +868,9 @@ function Portfolio() {
 
                             <p
                               className={`mt-2 text-xs tracking-[0.14em] transition-colors ${
-                                isSelected ? "text-primary" : "text-muted-foreground/60"
+                                isSelected
+                                  ? "text-primary"
+                                  : "text-muted-foreground/60"
                               }`}
                             >
                               {poem.englishTitle}
@@ -810,7 +901,9 @@ function Portfolio() {
                     </h3>
 
                     <div
-                      className={`manuscript-line mt-8 ${openPoem ? "manuscript-line-open" : ""}`}
+                      className={`manuscript-line mt-8 ${
+                        openPoem ? "manuscript-line-open" : ""
+                      }`}
                     />
 
                     <div
@@ -822,7 +915,9 @@ function Portfolio() {
                         line ? (
                           <p
                             key={`${poem.englishTitle}-${li}`}
-                            className={openPoem ? "manuscript-line-item" : ""}
+                            className={
+                              openPoem ? "manuscript-line-item" : ""
+                            }
                             style={
                               openPoem
                                 ? {
@@ -836,7 +931,9 @@ function Portfolio() {
                         ) : (
                           <p
                             key={`${poem.englishTitle}-${li}`}
-                            className={`h-4 ${openPoem ? "manuscript-stanza" : ""}`}
+                            className={`h-4 ${
+                              openPoem ? "manuscript-stanza" : ""
+                            }`}
                             style={
                               openPoem
                                 ? {
@@ -850,7 +947,9 @@ function Portfolio() {
                     </div>
 
                     {!openPoem && poem.lines.length > 8 && (
-                      <p className="mt-2 text-sm text-muted-foreground/60">...</p>
+                      <p className="mt-2 text-sm text-muted-foreground/60">
+                        ...
+                      </p>
                     )}
 
                     <button
@@ -880,7 +979,11 @@ function Portfolio() {
         <section id="desk" className="border-t border-border/50 bg-ink/40">
           <div className="mx-auto max-w-6xl px-6 py-24 md:px-10 md:py-32">
             <Reveal>
-              <ChapterHeading chapter="Chapter V" title="THE WRITER'S DESK" intro={archiveIntro} />
+              <ChapterHeading
+                chapter="Chapter V"
+                title="THE WRITER'S DESK"
+                intro={archiveIntro}
+              />
             </Reveal>
 
             <ul className="mt-20 divide-y divide-border/60 border-y border-border/60">
@@ -898,7 +1001,9 @@ function Portfolio() {
                         </p>
 
                         {item.tamilTitle && (
-                          <p className="tamil mt-2 text-lg text-lilac">{item.tamilTitle}</p>
+                          <p className="tamil mt-2 text-lg text-lilac">
+                            {item.tamilTitle}
+                          </p>
                         )}
 
                         <p className="mt-2 text-xs uppercase tracking-widest text-muted-foreground">
@@ -914,8 +1019,16 @@ function Portfolio() {
                         {item.link && (
                           <a
                             href={item.link}
-                            target={item.link.startsWith("#") ? undefined : "_blank"}
-                            rel={item.link.startsWith("#") ? undefined : "noreferrer"}
+                            target={
+                              item.link.startsWith("#")
+                                ? undefined
+                                : "_blank"
+                            }
+                            rel={
+                              item.link.startsWith("#")
+                                ? undefined
+                                : "noreferrer"
+                            }
                             className="label-xs inline-block border-b border-primary pb-1 text-foreground transition-all duration-300 hover:border-lilac hover:text-lilac"
                           >
                             {item.linkLabel} →
@@ -931,7 +1044,7 @@ function Portfolio() {
         </section>
 
         {/* ========================================================= */}
-        {/* ABOUT — JOURNEY + RANGE                                   */}
+        {/* ABOUT — JOURNEY + RANGE                                  */}
         {/* ========================================================= */}
 
         <section className="border-t border-border/50">
@@ -957,10 +1070,17 @@ function Portfolio() {
             <Reveal delay={100}>
               <ul className="mt-20 divide-y divide-border/60 border-y border-border/60">
                 {writingRange.map((item) => (
-                  <li key={item.index} className="grid gap-2 py-6 md:grid-cols-[6rem_1fr_1.2fr]">
-                    <span className="label-xs text-primary">{item.index}</span>
+                  <li
+                    key={item.index}
+                    className="grid gap-2 py-6 md:grid-cols-[6rem_1fr_1.2fr]"
+                  >
+                    <span className="label-xs text-primary">
+                      {item.index}
+                    </span>
 
-                    <span className="label-xs text-foreground">{item.title}</span>
+                    <span className="label-xs text-foreground">
+                      {item.title}
+                    </span>
 
                     <span className="text-sm leading-relaxed text-muted-foreground">
                       {item.detail}
@@ -973,7 +1093,7 @@ function Portfolio() {
         </section>
 
         {/* ========================================================= */}
-        {/* EPILOGUE — CONTACT                                        */}
+        {/* EPILOGUE — CONTACT                                       */}
         {/* ========================================================= */}
 
         <section id="contact" className="border-t border-border/50 bg-ink/40">
@@ -991,9 +1111,13 @@ function Portfolio() {
 
               <div className="mt-16 grid gap-12 md:grid-cols-2">
                 <div>
-                  <p className="font-serif text-3xl text-foreground">{identity.name}</p>
+                  <p className="font-serif text-3xl text-foreground">
+                    {identity.name}
+                  </p>
 
-                  <p className="mt-2 font-serif text-xl italic text-lilac">{identity.penName}</p>
+                  <p className="mt-2 font-serif text-xl italic text-lilac">
+                    {identity.penName}
+                  </p>
 
                   <p className="label-xs mt-6 text-muted-foreground">
                     Screenwriter · Script Writer · Creative Writer
@@ -1015,13 +1139,18 @@ function Portfolio() {
                   <li>
                     <span className="label-xs block text-primary">Phone</span>
 
-                    <a href={`tel:${contact.phone}`} className="text-foreground hover:text-lilac">
+                    <a
+                      href={`tel:${contact.phone}`}
+                      className="text-foreground hover:text-lilac"
+                    >
                       {contact.phone}
                     </a>
                   </li>
 
                   <li>
-                    <span className="label-xs block text-primary">LinkedIn</span>
+                    <span className="label-xs block text-primary">
+                      LinkedIn
+                    </span>
 
                     <a
                       href={contact.linkedin}
