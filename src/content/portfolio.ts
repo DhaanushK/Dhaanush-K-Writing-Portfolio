@@ -72,7 +72,7 @@ export const process: string[] = [
    ========================================================= */
 
 export const booksIntro =
-  "Published works shaped by an early fascination with crime, suspense, human behaviour, and the darker logic of people.";
+  "Works sculpted by an early obsession with crime, suspense, human behaviour, and the darker side of people, hidden intentionally yet revealed unintentionally.";
 
 export type Book = {
   index: string;
@@ -877,7 +877,7 @@ export type ArchiveItem = {
 };
 
 export const archiveIntro =
-  "A working shelf of stories, screenplay pages and poems — pieces written along the way, and stories still being written.";
+  "A shelf of crafts sculpted along the way and some still being written";
 
 export const archive: ArchiveItem[] = [
   {
